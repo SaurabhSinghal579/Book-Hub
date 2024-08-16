@@ -33,9 +33,14 @@ BookHub is a community-driven platform focused on sharing and exploring book rec
    cd BookHub
 
 2. **Setup Environment Variables**
-    GOOGLE_BOOKS_API_KEY=your_google_books_api_key
+    GOOGLE_BOOKS_API_KEY=YOUR GOOGLE BOOK API KEY
 
 3. **Run Server**
     python manage.py runserver
 
     - Access the application at http://127.0.0.1:8000/recommendations/search/
+    - Give the new recommendation at http://127.0.0.1:8000/recommendations/submit_recommendations/
+    - View all recommendations at http://127.0.0.1:8000/recommendations/recommendations/
+    - Acces Django Admin at http://127.0.0.1:8000/admin/recommendations/
+        *credential for Django admin: username- test
+                                      password- 1234 
