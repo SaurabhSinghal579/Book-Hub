@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendations</title>
+</head>
+<body>
+    <a href="/recommendations/submit_recommendations/" ><Button class="btn btn-primary">Wanna Add New Recommendation ?</Button></a>
+    <h1>User Recommendations</h1>
+    {% if recommendations %}
+        <ul>
+            {% for recommendation in recommendations %}
+                <li>
+                    <h2>{{ recommendation.book.title }}</h2>
+                    <p>{{ recommendation.user_recommendation }}</p>
+                    <small>Recommended : {{ recommendation.comments}}</small>
+                    <p>Likes </p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recommendations yet.</p>
+    {% endif %}
+</body>
+</html>
